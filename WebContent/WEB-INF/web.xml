@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletContext</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>Sagarbv</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>sagar123</param-value>
+  </context-param>
+  <context-param>
+    <param-name>age</param-name>
+    <param-value>22</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>Context</display-name>
+    <servlet-name>Context</servlet-name>
+    <servlet-class>in.ineuron.controller.Context</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Context</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayServlet</display-name>
+    <servlet-name>DisplayServlet</servlet-name>
+    <servlet-class>in.ineuron.controller.DisplayServlet</servlet-class>
+    <load-on-startup>8</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+</web-app>
